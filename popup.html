@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitStreak</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>GitStreak</h2>
+    <p>Enter text to commit to your GitHub repository:</p>
+    <textarea id="userInput" placeholder="Enter your text here..."></textarea>
+    <div class="settings">
+      <input type="text" id="githubToken" placeholder="GitHub Token">
+      <input type="text" id="repoOwner" placeholder="Repo Owner (Username)">
+      <input type="text" id="repoName" placeholder="Repo Name">
+    </div>
+    <button id="streakButton">Streak It</button>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
