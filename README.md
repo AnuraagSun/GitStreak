@@ -1,3 +1,4 @@
+
 # 🚀 GitStreak Chrome Extension
 
 Hey there, streak champ! 👋 Welcome to **GitStreak** – the ultimate Chrome extension that makes keeping your GitHub streak alive as easy as pie. 🍰 It pops up a friendly box when you open Chrome, letting you add custom text or auto-generate random C code to commit to your GitHub repo. No more stress, no more broken streaks – just pure GitHub glory! 😎
@@ -6,18 +7,18 @@ Hey there, streak champ! 👋 Welcome to **GitStreak** – the ultimate Chrome e
 
 ## 📋 Table of Contents
 
-- [What’s GitStreak?](#whats-gitstreak-🤔)
-- [How to Set Up GitHub with GitStreak](#how-to-set-up-github-with-gitstreak-🔧)
-- [Generating a Personal Access Token (PAT)](#generating-a-personal-access-token-pat-🔑)
-- [⚠️ WARNING: Token Safety](#warning-⚠️-critical-token-safety-warning)
-- [How to Use GitStreak](#how-to-use-gitstreak-✨)
-- [Cool Features](#cool-features-🌟)
-- [Troubleshooting](#troubleshooting-🛠️)
-- [Folder Structure](#folder-structure-📁)
+- [What’s GitStreak?](#whats-gitstreak)
+- [How to Set Up GitHub with GitStreak](#how-to-set-up-github-with-gitstreak)
+- [Generating a Personal Access Token (PAT)](#generating-a-personal-access-token-pat)
+- [⚠️ WARNING: Token Safety](#warning-critical-token-safety-warning)
+- [How to Use GitStreak](#how-to-use-gitstreak)
+- [Cool Features](#cool-features)
+- [Troubleshooting](#troubleshooting)
+- [Folder Structure](#folder-structure)
 
 ---
 
-## What’s GitStreak? 🤔
+## What’s GitStreak?
 
 GitStreak is your daily GitHub streak buddy! It’s here to make sure you never miss a commit. Here’s what it does:
 
@@ -29,7 +30,7 @@ GitStreak is your daily GitHub streak buddy! It’s here to make sure you never 
 
 ---
 
-## How to Set Up GitHub with GitStreak 🔧
+## How to Set Up GitHub with GitStreak
 
 Before you start streaking, let’s connect GitStreak to your GitHub. Follow these steps:
 
@@ -56,7 +57,7 @@ Before you start streaking, let’s connect GitStreak to your GitHub. Follow the
 
 ---
 
-## Generating a Personal Access Token (PAT) 🔑
+## Generating a Personal Access Token (PAT)
 
 Generating a **Personal Access Token (PAT)** on GitHub is easy, even on the free tier. Let’s walk through it step by step:
 
@@ -189,7 +190,7 @@ Stay safe! 🔒
 
 ---
 
-## How to Use GitStreak ✨
+## How to Use GitStreak
 
 Using GitStreak is as easy as 1-2-3! Here’s how to keep your streak alive:
 
@@ -217,7 +218,7 @@ Using GitStreak is as easy as 1-2-3! Here’s how to keep your streak alive:
 
 ---
 
-## Cool Features 🌟
+## Cool Features
 
 GitStreak is packed with awesome features to make streaking fun and effortless:
 
@@ -236,7 +237,7 @@ GitStreak is packed with awesome features to make streaking fun and effortless:
 
 ---
 
-## Troubleshooting 🛠️
+## Troubleshooting
 
 Running into issues? Don’t worry – we’ve got you covered! Here’s how to fix common problems:
 
@@ -258,7 +259,7 @@ Running into issues? Don’t worry – we’ve got you covered! Here’s how to 
 
 ---
 
-## Folder Structure 📁
+## Folder Structure
 
 Curious about what’s inside the `GitStreak` folder? Here’s the breakdown:
 
