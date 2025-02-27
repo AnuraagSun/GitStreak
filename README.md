@@ -1,103 +1,86 @@
-
 # GitStreak Chrome Extension 🚀
 
-Keep your GitHub streak alive effortlessly! GitStreak prompts you to make daily commits via text or auto-generated C code. Perfect for maintaining your green grid. 🌱
+Never break your GitHub streak again! Commit daily via text or auto-generated C code with one click. 🔥
 
 ---
 
-## 📋 Table of Contents
-- [What is GitStreak?](#what-is-gitstreak-)
-- [Quick Start Guide](#quick-start-guide-)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Security Guide](#security-guide-)
-  - [PAT Generation](#-generating-a-personal-access-token-pat)
-  - [Token Safety](#-critical-token-safety-warning)
-- [Usage Guide](#usage-guide-)
-- [Features](#features-)
-- [Troubleshooting](#troubleshooting-)
-- [Project Structure](#project-structure-)
+## 📋 Table of Contents  
+- [What is GitStreak?](#what-is-gitstreak-)  
+- [Setup Guide](#setup-guide-)  
+- [Token Security Warning](#-token-security-warning-)  
+- [How to Use](#how-to-use-)  
+- [Features](#features-)  
+- [Troubleshooting](#troubleshooting-)  
+- [Project Structure](#project-structure-)  
 
 ---
 
-## What is GitStreak? 🤖
+## What is GitStreak? 🤔
 
-A Chrome extension that helps you maintain GitHub streaks by:
-- 🗓️ Daily reminders when you open Chrome
-- ✍️ Manual text commits (`user_commit_<date>.txt`)
-- 🤖 Auto-generated C code commits (`random_code_<date>.c`)
-- 🔒 Secure token storage in Chrome's local storage
-- ⏰ 24-hour cooldown period to prevent duplicate commits
-
----
-
-## Quick Start Guide 🚦
-
-### Prerequisites
-- Chrome browser (v90+)
-- GitHub account
-- Repository write permissions
-
-### Installation
-1. **Get GitHub Token**  
-   *(See [PAT Generation](#-generating-a-personal-access-token-pat) below)*
-
-2. **Load Extension in Chrome**
-   ```bash
-   chrome://extensions/ → Enable "Developer mode" → Load unpacked → Select extension folder
-   ```
-
-3. **Configure GitStreak**
-   ```yaml
-   Click extension icon → Enter:
-   - GitHub Token: ghp_YourTokenHere
-   - Repo Owner: your_username
-   - Repo Name: target_repository
-   ```
+A Chrome extension that:  
+✅ Shows daily pop-up reminders  
+✅ Lets you commit custom text or auto-generated C code  
+✅ Securely stores your GitHub credentials  
+✅ Tracks 24-hour commit cooldown  
 
 ---
 
-## Security Guide 🔐
+## Setup Guide 🔧
 
-### 🔑 Generating a Personal Access Token (PAT)
-1. GitHub Settings → Developer Settings → Personal access tokens
-2. Permissions: **repo** (full control)
-3. Expiration: 30 days (recommended)
-4. Store securely: Use password managers like Bitwarden/1Password
+### Step 1: Get GitHub Token
+1. Go to [GitHub Tokens](https://github.com/settings/tokens)  
+2. Click **Generate new token (classic)**  
+3. Configure:  
+   - Name: `GitStreak`  
+   - Expiration: 30 days (recommended)  
+   - Permissions: **repo** (ONLY THIS!)  
+4. Copy token immediately ⚠️  
 
-### ⚠️ Critical Token Safety Warning
-**Never:**
-- 🚫 Commit tokens to version control
-- 🚫 Share via unencrypted channels
-- 🚫 Grant unnecessary permissions
+### Step 2: Install Extension
+```bash
+1. Open Chrome → chrome://extensions  
+2. Enable "Developer mode" (top-right)  
+3. Click "Load unpacked" → Select extension folder
+```
 
-**Always:**
-- 🔄 Rotate tokens monthly
-- 👁️ Monitor via [GitHub Security Log](https://github.com/settings/security-log)
-- 🗑️ Revoke compromised tokens immediately
+### Step 3: Configure GitStreak
+<img src="https://i.imgur.com/7QZJg8J.png" width="300" alt="GitStreak config screenshot">  
+
+Fill in pop-up fields:  
+- **GitHub Token:** Your copied token  
+- **Repo Owner:** Your GitHub username  
+- **Repo Name:** Target repository  
 
 ---
 
-## Usage Guide 🎮
+## ⚠️ Token Security Warning 🔐
 
-1. **Daily Prompt**  
-   Popup appears on Chrome launch (if no commit today)
+**NEVER:**  
+🚫 Commit tokens to code  
+🚫 Share via email/chat  
+🚫 Grant extra permissions  
 
-2. **Commit Options**  
-   ```bash
-   [Option 1] Enter custom text → Creates .txt file
-   [Option 2] Leave blank → Generates C code
-   ```
+**ALWAYS:**  
+🔑 Store in password manager  
+🔄 Rotate every 30 days  
+👁️ Monitor [access logs](https://github.com/settings/security-log)  
 
-3. **Commit Workflow**  
-   ```mermaid
-   graph LR
-   A[Open Chrome] --> B{Commit Today?}
-   B -->|No| C[Enter Text/Generate Code]
-   C --> D[Streak It!]
-   D --> E[GitHub Commit]
-   B -->|Yes| F[Quiet Mode]
-   ```
+**If compromised:**  
+1. Revoke token IMMEDIATELY  
+2. Audit repository actions  
+3. Generate new token  
+
+---
+
+## How to Use ✨
+
+1. **Open Chrome** → See pop-up  
+2. **Choose commit type:**  
+   - Type text → `user_commit_YYYY-MM-DD.txt`  
+   - Leave blank → `random_code_YYYY-MM-DD.c`  
+3. Click **Streak It!** → Done! 🎉  
+
+<img src="https://i.imgur.com/5XwDk9i.gif" width="500" alt="Demo">  
 
 ---
 
@@ -105,36 +88,39 @@ A Chrome extension that helps you maintain GitHub streaks by:
 
 | Feature                | Description                                  |
 |------------------------|----------------------------------------------|
-| Smart Reminders        | Only prompts once per 24 hours              |
-| C Code Generator       | Creates functional programs (linked lists, math ops) |
-| Secure Storage         | Encrypted token storage in Chrome            |
-| Cross-Platform         | Works with all GitHub repos (public/private) |
+| Auto C Code            | Generates working C programs (math, DS, algos) |
+| Secure Storage         | Encrypted Chrome storage for tokens         |
+| Daily Lock             | Only prompts once per 24 hours              |
+| Cross-Platform         | Works with public/private repos             |
 
 ---
 
 ## Troubleshooting 🛠️
 
-**Issue** | **Solution**
----|---
-Popup not appearing | 1. Check extension permissions<br>2. Verify `background.js` is active
-Commit failures | 1. Validate PAT permissions<br>2. Check repo name spelling
-C code errors | Intentionally minimal validation - focus on streak, not code quality
+**Issue** | **Fix**  
+---|---  
+No pop-up | 1. Check extension permissions<br>2. Reload Chrome  
+Commit fails | 1. Verify repo exists<br>2. Check token permissions  
+C code errors | Expected behavior - focus on streak, not code quality  
 
 ---
 
 ## Project Structure 📂
 
-```bash
-GitStreak/
-├── manifest.json       # Extension metadata
-├── popup/              # UI components
+```
+gitstreak/
+├── manifest.json
+├── popup/
 │   ├── popup.html
-│   ├── popup.css
-│   └── popup.js       # Commit logic
-├── background.js       # Daily reset handler
-├── c_generator/       # Code generation
+│   ├── popup.js
+│   └── popup.css
+├── background.js
+├── c_generator/
 │   ├── templates/
 │   └── generator.js
-└── icons/              # Extension artwork
+└── icons/
+    ├── icon48.png
+    └── icon128.png
 ```
+
 
