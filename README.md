@@ -1,7 +1,3 @@
-Below is a reorganized and enhanced version of your original text. I’ve kept all the original content intact, restructured it for better readability, and added some flair to make it more engaging. I’ve also improved formatting, added visual separators, and included some additional tips and emojis to make it more appealing. Let me know if you'd like further tweaks!
-
----
-
 # 🚀 GitStreak Chrome Extension
 
 Hey there, streak champ! 👋 Welcome to **GitStreak** – the ultimate Chrome extension that makes keeping your GitHub streak alive as easy as pie. 🍰 It pops up a friendly box when you open Chrome, letting you add custom text or auto-generate random C code to commit to your GitHub repo. No more stress, no more broken streaks – just pure GitHub glory! 😎
