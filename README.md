@@ -1,6 +1,4 @@
-Here’s a reorganized, visually clean version of your README with improved structure and flow:
 
-```markdown
 # GitStreak Chrome Extension 🚀
 
 Keep your GitHub streak alive effortlessly! GitStreak prompts you to make daily commits via text or auto-generated C code. Perfect for maintaining your green grid. 🌱
@@ -139,6 +137,4 @@ GitStreak/
 │   └── generator.js
 └── icons/              # Extension artwork
 ```
-
----
 
